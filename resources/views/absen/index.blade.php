@@ -4,7 +4,7 @@
 <div class="section-header">
   <h1>Absensi Siswa</h1>
   <div class="section-header-breadcrumb">
-    <div class="breadcrumb-item active"><a href="admin">Dashboard</a></div>
+    <div class="breadcrumb-item active"><a href="dashboard">Dashboard</a></div>
     <div class="breadcrumb-item"><a href="#">Data</a></div>
   </div>
 </div>
@@ -21,18 +21,18 @@
       <p>{{ $message }}</p>
   </div>
 @endif
-
-<table class="table table-bordered">
+<div class="card">
+<table class="table table-striped">
   <tr>
-      <th>No</th>
-      <th>NIS</th>
-      <th>Nama</th>
-      <th>Rombel</th>
-      <th>Rayon</th>
-      <th>Jam Kedatangan</th>
-      <th>Jam Kepulangan</th>
-      <th>Keterangan</th>
-      <th width="280px">Action</th>
+      <th scope="col">No</th>
+      <th scope="col">NIS</th>
+      <th scope="col">Nama</th>
+      <th scope="col">Rombel</th>
+      <th scope="col">Rayon</th>
+      <th scope="col">Jam Kedatangan</th>
+      <th scope="col">Jam Kepulangan</th>
+      <th scope="col">Keterangan</th>
+      <th width="280px" scope="col">Action</th>
   </tr>
   @foreach ($absen as $a)
   <tr>
@@ -59,6 +59,7 @@
   </tr>
   @endforeach
 </table>
+</div>
 
 {!! $absen->links() !!}
 @endsection

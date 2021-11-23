@@ -2,19 +2,16 @@
   
 @section('content')
 <div class="section-header">
-    <h1>Daftar Siswa</h1>
+    <h1>Tambah Absen</h1>
     <div class="section-header-breadcrumb">
-      <div class="breadcrumb-item active"><a href="admin">Dashboard</a></div>
-      <div class="breadcrumb-item"><a href="#">Data</a></div>
+      <div class="breadcrumb-item active"><a href="dashboard">Dashboard</a></div>
+      <div class="breadcrumb-item"><a href="absen">Data</a></div>
       <div class="breadcrumb-item"><a href="students">Daftar Rayon</a></div>
     </div>
   </div>
 
     <div class="row">
         <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
-                <h2>Add new</h2>
-            </div>
             <div class="pull-right">
                 <a class="btn btn-primary" href="{{ route('absen.index') }}"> Back</a>
             </div>

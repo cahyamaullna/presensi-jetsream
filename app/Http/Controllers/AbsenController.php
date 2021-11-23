@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Absen;
-use App\Models\Student;
 use App\Models\Rombel;
 use App\Models\Rayon;
 use Illuminate\Http\Request;
@@ -30,10 +29,9 @@ class AbsenController extends Controller
      */
     public function create()
     {
-        $student = Student::all();
         $rayons = Rayon::all();
         $rombel = Rombel::all();
-        return view('absen.create', compact('student', 'rayons', 'rombel', $student, $rayons, $rombel));
+        return view('absen.create', compact('rayons', 'rombel', $rayons, $rombel));
     }
 
     /**
@@ -79,10 +77,9 @@ class AbsenController extends Controller
      */
     public function edit(absen $absen)
     {
-        $student = Student::all();
         $rayons = Rayon::all();
         $rombel = Rombel::all();
-        return view('absen.edit',compact('absen','student','rayons', 'rombel', $student,$rayons, $rombel));
+        return view('absen.edit',compact('absen','rayons', 'rombel',$rayons, $rombel));
     }
 
     /**

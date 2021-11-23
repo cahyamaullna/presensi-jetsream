@@ -8,4 +8,7 @@
     <div class="breadcrumb-item"><a href="#">Data</a></div>
   </div>
 </div>
+<div class="card">
+  
+</div>
 @endsection

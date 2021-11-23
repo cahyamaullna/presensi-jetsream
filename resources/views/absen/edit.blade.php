@@ -1,8 +1,7 @@
 @extends('layouts.master')
-  
 @section('content')
 <div class="section-header">
-    <h1>Daftar Siswa</h1>
+    <h1>Edit Absensi</h1>
     <div class="section-header-breadcrumb">
       <div class="breadcrumb-item active"><a href="admin">Dashboard</a></div>
       <div class="breadcrumb-item"><a href="#">Data</a></div>
@@ -12,9 +11,6 @@
 
     <div class="row">
         <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
-                <h2>Edit</h2>
-            </div>
             <div class="pull-right">
                 <a class="btn btn-primary" href="{{ route('absen.index') }}"> Back</a>
             </div>
@@ -45,11 +41,11 @@
                 </div>
                 <div class="form-group">
                     <strong>Jam Kedatangan</strong>
-                    <input type="text" name="jam_kedatangan" class="form-control" placeholder="Jam Kedatangan" value="{{$absen->jam_kedatangan}}">
+                    <input type="datetime-local" name="jam_kedatangan" class="form-control" placeholder="Jam Kedatangan">
                 </div>
                 <div class="form-group">
-                    <strong>Jam Kedatangan</strong>
-                    <input type="text" name="jam_kepulangan" class="form-control" placeholder="Jam Kepulangan" value="{{$absen->jam_kepulangan}}">
+                    <strong>Jam Kepulangan</strong>
+                    <input type="datetime-local" name="jam_kepulangan" class="form-control" placeholder="Jam Kepulangan">
                 </div>
                 <div class="form-group">
                     <strong>Keterangan:</strong>

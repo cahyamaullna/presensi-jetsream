@@ -4,7 +4,7 @@
 <div class="section-header">
   <h1>Daftar Siswa</h1>
   <div class="section-header-breadcrumb">
-    <div class="breadcrumb-item active"><a href="admin">Dashboard</a></div>
+    <div class="breadcrumb-item active"><a href="dashboard">Dashboard</a></div>
     <div class="breadcrumb-item"><a href="#">Data</a></div>
   </div>
 </div>
@@ -24,7 +24,8 @@
 @endif
 @endif
 
-<table class="table table-bordered">
+<div class="card">
+<table class="table table-striped">
   <tr>
       <th>No</th>
       <th>Nis</th>
